@@ -1,0 +1,47 @@
+* {
+    max-width: 850px;
+    padding: 0;
+}
+header {
+    padding: px;
+    background-color: rgb(149, 158, 158);
+    color: white;
+}
+nav {
+    background-color: rgb(8, 7, 18);
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+a {
+    display: flex;
+    padding: 10px;
+    color: white;
+}
+
+main {
+    background-color: rgb(213, 213, 212);
+    color: black;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 3fr 1fr ;
+}
+
+aside {
+    background-color: rgb(254, 253, 255);
+    as
+}
+footer {
+    color: white;
+    background-color: rgb(50, 46, 42);
+    padding: 1px 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+}
+
+.happy {
+    top: 10px;
+}
