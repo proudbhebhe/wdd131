@@ -5,10 +5,22 @@
     --color2: rgba(223, 244, 33, 0.619);
 }
 
-span {
-    display: block;
+
+.roboto-uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+header {
     background-color: var(--color1);
-    color: white;
+    color: #fff;
+}
+
+#course-title {
+    display: block;
     padding: 20px;
     text-align: center;
     font-size: large;
@@ -71,12 +83,12 @@ img {
 .bio {
   display: flex;
   padding: 20px;
-  gap: 20px; /* Space between text and image */
+  gap: 20px;
   align-items: flex-start;
 }
 
 .bio p {
-  flex: 1; /* Tells the text to take up all remaining space */
+  flex: 1;
   line-height: 1.5;
   margin-top: 0;
 }
@@ -152,4 +164,23 @@ li {
   flex: 1;
   line-height: 1.5;
   margin-top: 0;
+}
+
+footer {
+  background-color: var(--color1);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+#lastModified {
+  color: #e6ff00;
+  font-size: 0.9rem;
 }
