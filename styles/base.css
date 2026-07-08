@@ -4,7 +4,25 @@
     --color1: rgba(76, 76, 238, 0.909);
     --color2: rgba(223, 244, 33, 0.619);
 }
+@media (max-width: 650px) {
+    /* Stacks text and images vertically so they don't squish horizontally */
+    .bio, .country {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
+    .profile-pic, .flag-pic {
+        width: 60%;
+        max-width: 200px;
+        margin-bottom: 15px;
+    }
+    
+    /* Re-orders the bio so the image sits neatly above or below the text on phones */
+    .bio {
+        flex-direction: column-reverse;
+    }
+}
 
 .ubuntu-regular {
   font-family: "Ubuntu", sans-serif;
