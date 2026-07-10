@@ -1,7 +1,7 @@
 * {
-    max-width: 1000px;
-    --color: rgb(212, 0, 255);
-    --color1: silver;
+    --color: #0F172A;
+    --color1: #F8FAFC;
+    box-sizing: border-box;
     justify-content: center;
 }
 /*applied font*/
@@ -29,21 +29,33 @@ h1 {
 /* The header spans the screen across the max-width*/
 header {
     display: flex;
-    color: white;
-    padding: 10px;
+    color: var(--color1);
+    padding: 20px;
     width: 100%;
     font-size: 1.75rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    align-self: center;
     margin: 0 100px;
     background-color: var(--color);
-
 }
-header p{
-    position: relative;
-    left:0px;
-    margin: 0 200px 0 0;
+
+header p {
+    display: flex;
+    align-items: flex-start;
+}
+
+a {
+    gap: 20px;
+    padding: 0 20px;
+    color: var(--color1);
+    justify-content: space-between;
+}
+/* Changes the action when you hover over the contents*/
+a:hover {
+    background-color: var(--color1);
+    color: lightblue;
+    border-radius: 10px;
+
 }
 /* Places my images 3 in a column and wrap when the screen is getting smaller*/
 .build {
@@ -55,6 +67,7 @@ header p{
     justify-content: space-around;
     align-items: center;
 }
+
 /*makes the image and caption stack on top of each other.*/
 figure{
     display: flex;
@@ -64,36 +77,16 @@ figure{
     padding: 10px 20px;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    top: 11px;
-    padding:15px;
-}
+
 img {
     width: 250px;
     height: auto;
     
 }
 
-
-a {
-    gap: 20px;
-    padding: 0 20px;
-    color: #ffffff;
-    justify-content: space-around;
-}
-/* Changes the action when you hover over the contents*/
-a:hover {
-    background-color: rgba(205, 35, 217, 0.799);
-    color: lightblue;
-    border-radius: 10px;
-
-}
 /* Sets the footer to clear when showing my information and the last modified JS constant*/
 footer {
-  background-color: var(--color1);
+  background-color: var(--color);
   color: #ffffff;
   text-align: center;
   position: relative;
@@ -112,4 +105,47 @@ footer p {
 #lastModified {
   color: #e6ff00;
   font-size: 0.9rem;
+}
+
+/*works to show where the hamburger is on the screen*/
+.navigation {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 15px;
+}
+.open .navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.open li {
+    display: block;
+}
+
+/* For the hamburger menu*/
+#menu {
+	font-size: 1.5rem;
+    display: block;
+    list-style: none;
+    top: 1rem;
+    right: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	right: 1rem;
+}
+
+#menu li{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
 }
