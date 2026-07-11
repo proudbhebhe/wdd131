@@ -42,6 +42,7 @@ header {
 header p {
     display: flex;
     align-items: flex-start;
+    color: var(--color1);
 }
 
 a {
@@ -138,7 +139,7 @@ footer p {
 .open li {
     display: block;
     width: 100%;
-}*/
+}
 /* Trying to remove the paragraph in the header when the hamburger menu is clicked*/
 
 
@@ -168,16 +169,3 @@ footer p {
 }*/
 
 /* try again to write the code for the Header with the hamburger menu and the accurate layout*/
-header {
-    background-color: var(--color);
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.75em;
-}
-
-header p{
-    color: var(--color1);
-}
-
