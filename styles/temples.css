@@ -48,10 +48,10 @@ a {
     gap: 20px;
     padding: 0 20px;
     color: var(--color1);
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 /* Changes the action when you hover over the contents*/
-a:hover {
+/*a:hover {
     background-color: var(--color1);
     color: lightblue;
     border-radius: 10px;
@@ -109,32 +109,39 @@ footer p {
 
 /*works to show where the hamburger is on the screen*/
 .navigation {
-    display: flex;
-    justify-content: right;
-    list-style: none;
-    padding: 15px;
+    display: none;
+    
 }
 .open .navigation{
-    display: flex;
+    display: block;
+
     flex-direction: column;
     align-items: center;
 }
 
-.open li {
-    display: block;
+.open .navigation a{
+    
+    text-decoration: none;
+    list-style: none;
+    color: #ffff;
+    
 }
 
-/* For the hamburger menu*/
+.open li {
+    display: block;
+    width: 100%;
+}*/
+
+/*For the hamburger menu*/
 #menu {
 	font-size: 1.5rem;
     display: block;
     list-style: none;
-    top: 1rem;
-    right: 0;
+    top: 1.2rem;
 	background: none;
-	color: #000;
+	color: #ffff;
 	position: absolute;
-	right: 1rem;
+	right: 0;
 }
 
 #menu li{
@@ -148,4 +155,19 @@ footer p {
 
 #menu.open::before {
 	content: "❌";
+}*/
+
+/* try again to write the code for the Header with the hamburger menu and the accurate layout*/
+header {
+    background-color: var(--color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.75em;
 }
+
+header p{
+    color: var(--color1);
+}
+
