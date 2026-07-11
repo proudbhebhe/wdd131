@@ -1,13 +1,17 @@
 @media (min-width: 37.5em) {
     #menu {
         display: none;
+        visibility: hidden;
+    }
+    .open .new {
+        display: none;
     }
     #happy{
         display: flex;
         flex-direction: row;
         align-items: center;
         text-decoration: none;
-        color: #ffff;
+        color: #0F172A;
 
     }
     nav ul li {

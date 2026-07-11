@@ -1,6 +1,6 @@
 * {
     --color: #0F172A;
-    --color1: #F8FAFC;
+    --color1: #f4f000;
     box-sizing: border-box;
     justify-content: center;
 }
@@ -48,20 +48,17 @@ header p {
 a {
     gap: 20px;
     padding: 0 20px;
-    color: var(--color1);
     justify-content: flex-end;
 }
 /* Changes the action when you hover over the contents*/
 a:hover {
     background-color: var(--color1);
-    color:#0F172A;
     border-radius: 10px;
 
 }
 /* Places my images 3 in a column and wrap when the screen is getting smaller*/
 .build {
     display: flex;
-    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
     position: relative;
     left: 100px;
@@ -124,13 +121,17 @@ footer p {
 
 .open .navigation a{
     display: block;
+    margin: 0 auto;
+    font-size: 3rem;
     text-decoration: none;
     padding: 10px;
     border: 1px solid black;
     list-style: none;
-    color: #ffff;
+    color: #ffffff;
     
 }
+
+
 
 .active {
     color: #e6ff00;
@@ -148,7 +149,7 @@ footer p {
 	font-size: 1.5rem;
     display: block;
     list-style: none;
-    top: 1.2rem;
+    top: 3rem;
 	background: none;
 	color: #ffff;
 	position: absolute;
