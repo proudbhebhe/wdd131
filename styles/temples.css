@@ -51,7 +51,7 @@ a {
     justify-content: flex-end;
 }
 /* Changes the action when you hover over the contents*/
-/*a:hover {
+a:hover {
     background-color: var(--color1);
     color: lightblue;
     border-radius: 10px;
@@ -117,20 +117,30 @@ footer p {
 
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    flex-grow: 1;
 }
 
 .open .navigation a{
-    
+    display: block;
     text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
     list-style: none;
     color: #ffff;
     
+}
+
+.active {
+    color: #e6ff00;
 }
 
 .open li {
     display: block;
     width: 100%;
 }*/
+/* Trying to remove the paragraph in the header when the hamburger menu is clicked*/
+
 
 /*For the hamburger menu*/
 #menu {
