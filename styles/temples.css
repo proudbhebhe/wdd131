@@ -1,8 +1,7 @@
 * {
     --color: #0F172A;
     --color1: #f4f000;
-    box-sizing: border-box;
-    justify-content: center;
+    box-sizing: border-box
 }
 /*applied font*/
 .ubuntu-regular {
@@ -13,14 +12,14 @@
 
 /* Moves the main body t o the middle of the screen.*/
 main{
-    margin: 0 50px;
+    margin: 0 auto;
 
 }
 /*moves the header to the middle*/
 h1 {
     display: flex;
     position: relative;
-    left: 100px;
+    margin: 10px auto;
     font-size: 2.5rem;
     justify-content: center;
     align-items: center;
@@ -35,7 +34,7 @@ header {
     font-size: 1.75rem;
     justify-content: space-between;
     align-items: center;
-    margin: 0 100px;
+    margin: 0 auto;
     background-color: var(--color);
 }
 
@@ -61,7 +60,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    left: 100px;
+    margin: 0 auto;
     justify-content: space-around;
     align-items: center;
 }
@@ -73,11 +72,18 @@ figure{
     align-items: center;
     margin: 0;
     padding: 10px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure:hover {
+    transform: translateY(-5px); /* Moves the figure up by 5 pixels */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Slightly stronger, more diffused shadow */
 }
 
 
 img {
-    width: 250px;
+    max-width: 300px;
+    width: 100%;
     height: auto;
     
 }
@@ -88,7 +94,7 @@ footer {
   color: #ffffff;
   text-align: center;
   position: relative;
-  left: 100px;
+    margin:0 auto;
   padding: 20px;
   margin-top: 40px;
   font-family: Arial, sans-serif;
@@ -112,20 +118,21 @@ footer p {
 }
 .open .navigation{
     display: grid;
-
+    right: 100px;
     flex-direction: column;
-    align-items: center;
+    place-items: center;
     width: 100%;
     flex-grow: 1;
 }
 
 .open .navigation a{
     display: block;
-    margin: 0 auto;
-    font-size: 3rem;
+    right: 100px;
+
+    margin: 0 150px 0 50px;
+    font-size: 2rem;
     text-decoration: none;
     padding: 10px;
-    border: 1px solid black;
     list-style: none;
     color: #ffffff;
     
@@ -153,7 +160,7 @@ footer p {
 	background: none;
 	color: #ffff;
 	position: absolute;
-	right: 0;
+	right: 1rem;
 }
 
 #menu li{
