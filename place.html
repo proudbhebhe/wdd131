@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York City</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <meta name="author" content="Proud Bhebhe">
+    <meta name="description" content="A responsive website about New York City that has some data and weather sections. Built to be unique in mobile and large views.">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header><h1>New York City</h1></header>
+    <main>
+        <picture>
+            <source srcset="images/new_york.webp" media="(min-width: 37.51em)">
+            <source media="(max-width: 37.5em)" srcset="images/new-york.webp">
+            <img src="images/new-york.webp" alt="New York City ">
+        </picture>
+        <section class="first">
+            <h2>Data</h2>
+            <dl>
+                <dt><strong>Area:</strong> </dt>
+                <dd>1,223.59 km²</dd>
+                <dt><strong>Population:</strong></dt> <dd>8,584,629</dd>
+                <dt><strong>Languages:</strong></dt>
+                <dd>English, Spanish, Chinese, Russian</dd>
+                <dt><strong>Currency:</strong></dt> <dd>United States 
+                Dollar $</dd>
+                <dt><strong>Time Zone:</strong></dt> <dd>GMT -4</dd>
+                <dt><strong>Calling Code:</strong></dt> <dd> +1</dd>
+                <dt><strong>internet TLD:</strong></dt> <dd>.nyc</dd>
+            </dl>
+        </section>
+        <section class="second">
+            <h2>Weather ⛅</h2>
+            <dl>
+                <dt><strong>Temperature:</strong></dt>
+                <dd></dd>
+                <dt><strong>Conditions:</strong></dt>
+                <dd></dd>
+                <dt><strong>Wind:</strong></dt>
+                <dd></dd>
+                <dt><strong>Wind Chill:</strong></dt>
+                <dd></dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Proud Bhebhe | Zimbabwe</p>
+  
+  <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
