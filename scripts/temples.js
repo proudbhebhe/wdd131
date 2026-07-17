@@ -1,13 +1,11 @@
 const today = new Date();
 const currentYear = today.getFullYear();
-const hamButton = document.querySelector('#menu');
-const nav = document.querySelector('nav');
-const title = document.querySelector('.new');
 
+function calculateWindChill(temp, windSpeed ){
+    return 35.74 + (0.6215 * temp) - (35.75 * windSpeed ** 0.16) + (0.4275 * temp * windSpeed ** 0.16);
+}
+const happy =calculateWindChill(30,15)
 document.getElementById("currentyear").innerHTML = currentYear;
 document.getElementById("lastModified").innerHTML = "Last Modification: " + document.lastModified;
-hamButton.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    hamButton.classList.toggle('open');
-    title.classList.toggle('open')
-});
+
+document.getElementById("chill").innerHTML =  happy.
