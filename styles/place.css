@@ -1,5 +1,9 @@
 *{
     box-sizing: border-box;
+   
+}
+
+:root{
     --color1 : #013884;
     --color2 : #F5A623;
     --color3 : #ffffff;
@@ -90,10 +94,20 @@ dl{
 
     
     h2{
-    background-color: var(--color2);
-    width: 65%;
-    border-left: 10px var(--color2);
-    opacity: 1.5;
+        position: relative;
+        background-color: var(--color2);
+        width: 65%;
+        border-left: 10px var(--color2);
+        opacity: 1.5;
+    }
+    h2::after{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        height: 4px;
+        width: 50px;
+        background-color: var(--color1);
     }
 
     section{
