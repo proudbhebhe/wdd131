@@ -32,7 +32,6 @@ dl{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0;
-        font-size: 0.8;
     }
 
     dl dt{
@@ -98,7 +97,7 @@ dl{
         background-color: var(--color2);
         width: 65%;
         border-left: 10px var(--color2);
-        opacity: 1.5;
+        opacity: 0.8;
     }
     h2::after{
         content: "";
