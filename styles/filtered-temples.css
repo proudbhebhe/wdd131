@@ -1,0 +1,219 @@
+* {
+    --color: #0F172A;
+    --color1: #f4f000;
+    box-sizing: border-box
+}
+/*applied font*/
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Moves the main body t o the middle of the screen.*/
+main{
+    margin: 0 auto;
+
+}
+/*moves the header to the middle*/
+h1 {
+    display: flex;
+    position: relative;
+    margin: 10px auto;
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The header spans the screen across the max-width*/
+header {
+    display: flex;
+    color: var(--color1);
+    padding: 20px;
+    width: 100%;
+    font-size: 1.75rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--color);
+}
+
+header p {
+    display: flex;
+    align-items: flex-start;
+    color: #ffffff;
+}
+
+a {
+    gap: 20px;
+    padding: 0 20px;
+    justify-content: flex-end;
+}
+/* Changes the action when you hover over the contents*/
+a:hover {
+    background-color: var(--color1);
+    color: #0F172A;
+    border-radius: 10px;
+
+}
+/* Places my images 3 in a column and wrap when the screen is getting smaller*/
+.build {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*makes the image and caption stack on top of each other.*/
+section{
+    display: flex;
+    height:450px ;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color:lightgrey;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px); /* Moves the figure up by 5 pixels */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Slightly stronger, more diffused shadow */
+}
+.label{
+    color: purple;
+}
+section p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    box-shadow: 2px rgb(224, 47, 47);
+    
+}
+
+/* Sets the footer to clear when showing my information and the last modified JS constant*/
+footer {
+  background-color: var(--color);
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+    margin:0 auto;
+  padding: 20px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+#lastModified {
+  color: #e6ff00;
+  font-size: 0.9rem;
+}
+
+/*works to show where the hamburger is on the screen*/
+.navigation {
+    display: none;
+    
+}
+.open .navigation{
+    display: grid;
+    right: 100px;
+    flex-direction: column;
+    place-items: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.open .navigation a{
+    display: block;
+    right: 100px;
+
+    margin: 0 150px 0 50px;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 10px;
+    list-style: none;
+    color: #ffffff;
+    
+}
+
+
+
+.active {
+    color: #e6ff00;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+/* Trying to remove the paragraph in the header when the hamburger menu is clicked*/
+
+
+/*For the hamburger menu*/
+#menu {
+	font-size: 1.5rem;
+    display: block;
+    list-style: none;
+    top: 3rem;
+	background: none;
+	color: #ffff;
+	position: absolute;
+	right: 1rem;
+}
+
+#menu li{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+@media (min-width: 37.5em) {
+    #menu {
+        display: none;
+        visibility: hidden;
+    }
+    .open .new {
+        display: none;
+    }
+    #happy{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        color: #0F172A;
+
+    }
+    nav ul li {
+        display: flex;
+        justify-content: space-around;
+        
+        padding: 20px;
+        flex: 1 1 100%;
+    }
+
+    a{
+        text-decoration: none;
+        list-style: none;
+        color: #ffff;
+    }
+}
