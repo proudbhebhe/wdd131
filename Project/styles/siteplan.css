@@ -1,0 +1,30 @@
+:root{
+    --primary-color: #003B90;
+    --accent-color: #65B1F0;
+    --bg-color:#FFFFFF;
+    --text-dark:#07193D;
+}
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.scenario {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10;
+  font-style: normal;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+}
