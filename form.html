@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js"></script>
+    <meta name="author" content="Proud Bhebhe">
+    <meta name="description" content="A simple website showing a form to submit a review of a product.">
+</head>
+<body>
+    <header>Product Review</header>
+    <main>
+        <form method="get" action="review.html">
+            <label id="product">Product Name
+                <select id="great" name="subject" required ><option value="" placeholder="Select a product" disabled selected>Select a product</option>
+                   
+                </select>
+            </label>
+            <section>
+                <div>Overall rating</div>
+                <label><input type="radio" name="audience" value="oneStar" required>&star;</label>
+                <label><input type="radio" name="audience" value="twoStars" required>&star;&star;</label>
+                <label><input type="radio" name="audience" value="threeStars" required>&star;&star;</label>
+                <label><input type="radio" name="audience" value="fourStars" required>&star;&star;&star;&star;</label>
+                <label><input type="radio" name="audience" value="fiveStars" required>&star;&star;&star;&star;&star;</label>
+            </section>
+
+            <label id="idea">Date of Installation <input id="" type="date" name="installDate" required></label>
+            <section id="trash">
+                <div>Which features did you find useful in the product?</div>
+                <a>(Check all that apply)</a>
+                <label><input id="durable" type="checkbox" name="durability" value="yes">Durability</label>
+                <label><input id="use" type="checkbox" name="ease" value="yes"> Ease of use</label>
+                <label><input id="perform" type="checkbox" name="performance" value="yes"> Performance</label>
+                <label><input id="designer" type="checkbox" name="design" value="yes"> Design </label>
+            </section>
+            <section id="writer">
+                <label>Written Review<input id="write" type="textarea" name="review"></label>
+                <label>Your Name <a>(Optional)</a><input id="newname" type="text" name="fname"></label>
+            </section>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+         <p>&copy;<span id="currentyear"></span> | Proud Bhebhe | Zimbabwe</p>
+  
+        <p id="lastModified"></p>
+    </footer>    
+    
+</body>
+</html>

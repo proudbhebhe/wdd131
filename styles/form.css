@@ -1,0 +1,121 @@
+
+:root{
+    --color1: lightgrey;
+    --color2: darkblue;
+}
+
+header{
+    background-color: var(--color2);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color1);
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 100%;
+    padding-left: 50px;
+    margin: 0 auto;
+    max-width: 500px;
+    height: auto;
+}
+
+#product{
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#product select{
+    padding: 5px;
+    width: 300px;
+}
+
+section div{
+    display: grid;
+    width:px;
+
+}
+
+section label{
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#idea{
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#idea input{
+    width: 300px;
+    padding: 5px;
+}
+
+#trash{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#writer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+#write{
+    width: 100%;
+    margin-right: 50px ;
+    height: 50px;
+}
+
+#writer a{
+    color: var(--color2);
+}
+
+#newname{
+    display: flex;
+    width: 400px;
+    height: 25px;
+}
+
+input[type="submit"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+    margin: 5px 150px 10px;
+}
+
+footer {
+  background-color: var(--color2);
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+    margin:0 auto;
+  padding: 20px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+#lastModified {
+  color: #e6ff00;
+  font-size: 0.9rem;
+}
