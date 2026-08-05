@@ -20,11 +20,11 @@
             </label>
             <section>
                 <div>Overall rating</div>
-                <label><input type="radio" name="audience" value="oneStar" required>&star;</label>
-                <label><input type="radio" name="audience" value="twoStars" required>&star;&star;</label>
-                <label><input type="radio" name="audience" value="threeStars" required>&star;&star;</label>
-                <label><input type="radio" name="audience" value="fourStars" required>&star;&star;&star;&star;</label>
-                <label><input type="radio" name="audience" value="fiveStars" required>&star;&star;&star;&star;&star;</label>
+                <label><input id="onestar" type="radio" name="audience" value="oneStar" required>&star;</label>
+                <label><input id="twostar" type="radio" name="audience" value="twoStars" required>&star;&star;</label>
+                <label><input id="threestar" type="radio" name="audience" value="threeStars" required>&star;&star;</label>
+                <label><input id="fourstar" type="radio" name="audience" value="fourStars" required>&star;&star;&star;&star;</label>
+                <label><input id="fivestar" type="radio" name="audience" value="fiveStars" required>&star;&star;&star;&star;&star;</label>
             </section>
 
             <label id="idea">Date of Installation <input id="" type="date" name="installDate" required></label>
@@ -37,7 +37,7 @@
                 <label><input id="designer" type="checkbox" name="design" value="yes"> Design </label>
             </section>
             <section id="writer">
-                <label>Written Review<input id="write" type="textarea" name="review"></label>
+                <label>Written Review <textarea name="textarea" id="write"></textarea></label>
                 <label>Your Name <a>(Optional)</a><input id="newname" type="text" name="fname"></label>
             </section>
             <input type="submit" value="Post Review">
