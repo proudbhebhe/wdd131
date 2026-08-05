@@ -14,7 +14,7 @@
     <main>
         <form method="get" action="review.html">
             <label id="product">Product Name
-                <select id="great" name="subject" required ><option value="" placeholder="Select a product" disabled selected>Select a product</option>
+                <select id="great" name="subject" required ><option value="" disabled selected>Select a product</option>
                    
                 </select>
             </label>
@@ -27,7 +27,7 @@
                 <label><input id="fivestar" type="radio" name="audience" value="fiveStars" required>&star;&star;&star;&star;&star;</label>
             </section>
 
-            <label id="idea">Date of Installation <input id="" type="date" name="installDate" required></label>
+            <label id="idea">Date of Installation <input id="install" type="date" name="installDate" required></label>
             <section id="trash">
                 <div>Which features did you find useful in the product?</div>
                 <a>(Check all that apply)</a>
@@ -37,7 +37,8 @@
                 <label><input id="designer" type="checkbox" name="design" value="yes"> Design </label>
             </section>
             <section id="writer">
-                <label>Written Review <textarea name="textarea" id="write"></textarea></label>
+                <div>Written Review</div>
+                <label><textarea name="textarea" id="write"></textarea></label>
                 <label>Your Name <a>(Optional)</a><input id="newname" type="text" name="fname"></label>
             </section>
             <input type="submit" value="Post Review">
