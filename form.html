@@ -13,33 +13,33 @@
     <header>Product Review</header>
     <main>
         <form method="get" action="review.html">
-            <label id="product">Product Name
+            <label for="great" id="product">Product Name
                 <select id="great" name="subject" required ><option value="" disabled selected>Select a product</option>
                    
                 </select>
             </label>
             <section>
                 <div>Overall rating</div>
-                <label><input id="onestar" type="radio" name="audience" value="oneStar" required>&star;</label>
-                <label><input id="twostar" type="radio" name="audience" value="twoStars" required>&star;&star;</label>
-                <label><input id="threestar" type="radio" name="audience" value="threeStars" required>&star;&star;</label>
-                <label><input id="fourstar" type="radio" name="audience" value="fourStars" required>&star;&star;&star;&star;</label>
-                <label><input id="fivestar" type="radio" name="audience" value="fiveStars" required>&star;&star;&star;&star;&star;</label>
+                <label for="onestar"><input id="onestar" type="radio" name="audience" value="oneStar" required>&star;</label>
+                <label for="twostar"><input id="twostar" type="radio" name="audience" value="twoStars" required>&star;&star;</label>
+                <label for="threestar"><input id="threestar" type="radio" name="audience" value="threeStars" required>&star;&star;</label>
+                <label for="fourstar"><input id="fourstar" type="radio" name="audience" value="fourStars" required>&star;&star;&star;&star;</label>
+                <label for="fivestar"><input id="fivestar" type="radio" name="audience" value="fiveStars" required>&star;&star;&star;&star;&star;</label>
             </section>
 
             <label id="idea">Date of Installation <input id="install" type="date" name="installDate" required></label>
             <section id="trash">
                 <div>Which features did you find useful in the product?</div>
                 <a>(Check all that apply)</a>
-                <label><input id="durable" type="checkbox" name="durability" value="yes">Durability</label>
-                <label><input id="use" type="checkbox" name="ease" value="yes"> Ease of use</label>
-                <label><input id="perform" type="checkbox" name="performance" value="yes"> Performance</label>
-                <label><input id="designer" type="checkbox" name="design" value="yes"> Design </label>
+                <label for="durable"><input id="durable" type="checkbox" name="durability" value="yes">Durability</label>
+                <label for="use"><input id="use" type="checkbox" name="ease" value="yes"> Ease of use</label>
+                <label for="perform"><input id="perform" type="checkbox" name="performance" value="yes"> Performance</label>
+                <label for="designer"><input id="designer" type="checkbox" name="design" value="yes"> Design </label>
             </section>
             <section id="writer">
                 <div>Written Review</div>
-                <label><textarea name="textarea" id="write"></textarea></label>
-                <label>Your Name <a>(Optional)</a><input id="newname" type="text" name="fname"></label>
+                <label for="write"><textarea name="textarea" id="write"></textarea></label>
+                <label for="newname">Your Name <a>(Optional)</a><input id="newname" type="text" name="fname"></label>
             </section>
             <input type="submit" value="Post Review">
         </form>
