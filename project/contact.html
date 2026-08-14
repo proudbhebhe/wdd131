@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | HomeGoods</title>
+  <meta name="author" content="Proud Bhebhe">
+  <meta name="description" content="Contact HomeGoods about appliances, product availability, delivery and installment options.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="HomeGoods home">Home<span>Goods</span></a>
+    <button class="nav-toggle" type="button" aria-controls="nav-list" aria-expanded="false">Menu</button>
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="products.html" >Products</a></li>
+        <li><a href="about.html" >About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact <span class="cart-pill" id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact HomeGoods</h1>
+      <p>Ask a question, request product information or enquire about installment options.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <section>
+        <div class="section-heading">
+          <h2>Find and reach us</h2>
+          <p>Use the details below as the starting point for your enquiry.</p>
+        </div>
+        <div class="contact-details">
+          <div class="contact-item"><strong>Shop location</strong>Harare, Zimbabwe</div>
+          <div class="contact-item"><strong>Phone</strong>+263 77 000 0000</div>
+          <div class="contact-item"><strong>Email</strong>sales@homegoods.co.zw</div>
+          <div class="contact-item"><strong>Opening hours</strong>Monday–Saturday, 8:00 AM–5:00 PM</div>
+        </div>
+      </section>
+
+      <section class="card form-card" aria-labelledby="form-title">
+        <h2 id="form-title">Send an enquiry</h2>
+        <div id="site-notice" class="notice" role="status" aria-live="polite"></div>
+        <form id="contact-form">
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required minlength="2">
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="field">
+              <label for="topic">What do you need?</label>
+              <select id="topic" name="topic" required>
+                <option value="">Select one</option>
+                <option value="Product information">Product information</option>
+                <option value="Installment enquiry">Installment enquiry</option>
+                <option value="Delivery">Delivery</option>
+                <option value="General question">General question</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required minlength="10" placeholder="Tell us which appliance you are interested in and what you would like to know."></textarea>
+            </div>
+            <div class="field full">
+              <button class="btn" type="submit">Send enquiry</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <section>
+        <h2>HomeGoods</h2>
+        <p>Practical home appliances with flexible installment options for Zimbabwean households.</p>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <p><a href="products.html">Products</a></p>
+        <p><a href="about.html">About us</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </section>
+      <section>
+        <h3>Contact</h3>
+        <p>Harare, Zimbabwe</p>
+        <p>+263 77 000 0000</p>
+        <p>sales@homegoods.co.zw</p>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span class="current-year"></span> HomeGoods. Built for the Home Essentials project.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
