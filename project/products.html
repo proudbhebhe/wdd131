@@ -1,86 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products | HomeGoods</title>
-  <meta name="author" content="Proud Bhebhe">
-  <meta name="description" content="Browse HomeGoods home appliances, including kitchen and cooling products.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/site.css">
-  <script src="scripts/site.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | HomeGoods</title>
+    <meta name="author" content="Proud Bhebhe">
+    <meta name="description" content="Browse HomeGoods kitchen and cooling appliances.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" defer></script>
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="logo" href="index.html" aria-label="HomeGoods home">Home<span>Goods</span></a>
-    <button class="nav-toggle" type="button" aria-controls="nav-list" aria-expanded="false">Menu</button>
-    <nav aria-label="Primary navigation">
-      <ul class="nav-list" id="nav-list">
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="products.html" aria-current="page">Products</a></li>
-        <li><a href="about.html" >About</a></li>
-        <li><a href="contact.html" >Contact <span class="cart-pill" id="cart-count">0</span></a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main id="main-content">
-  <section class="page-hero">
-    <div class="container">
-      <h1>Our appliances</h1>
-      <p>Browse the current HomeGoods selection. Add products to your enquiry list, then contact us about availability and installment options.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div id="site-notice" class="notice" role="status" aria-live="polite"></div>
-      <div class="filter-bar" aria-label="Product categories">
-        <button class="filter-btn active" type="button" data-category="All">All</button>
-        <button class="filter-btn" type="button" data-category="Kitchen">Kitchen</button>
-        <button class="filter-btn" type="button" data-category="Cooling">Cooling</button>
-        <button class="filter-btn" type="button" data-category="Packages">Packages</button>
-      </div>
-      <div class="product-grid" id="product-grid"></div>
-    </div>
-  </section>
-
-  <section class="section alt" aria-labelledby="enquiry-title">
-    <div class="container split">
-      <div>
-        <div class="section-heading">
-          <h2 id="enquiry-title">Your enquiry list</h2>
-          <p>Products you add are saved in your browser using localStorage. This lets you leave the page and return without losing your shortlist.</p>
+    <header>
+        <div class="header-content">
+            <div class="logo">HomeGoods</div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li><li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <ul id="enquiry-list"></ul>
-        <button class="btn" id="clear-enquiries" type="button">Clear enquiry list</button>
-      </div>
-      <div class="card form-card">
-        <h2>Ready to ask?</h2>
-        <p>Use our contact form to ask about prices, availability, delivery and installment arrangements.</p>
-        <a class="btn" href="contact.html">Contact HomeGoods</a>
-      </div>
-    </div>
-  </section>
-</main>
+    </header>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <section>
-        <h2>HomeGoods</h2>
-        <p>Practical home appliances with flexible installment options for Zimbabwean households.</p>
-      </section>       
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; <span class="current-year"></span> HomeGoods. Built for the Home Essentials project.</p>
-    </div>
-  </div>
-</footer>
+    <main>
+        <section class="page-title">
+            <h1>Our Products</h1>
+            <p>Browse our selection of practical home appliances.</p>
+        </section>
+        <section>
+            <div class="filter-buttons">
+                <button class="button filter-button" data-category="All" type="button">All</button>
+                <button class="button filter-button" data-category="Kitchen" type="button">Kitchen</button>
+                <button class="button filter-button" data-category="Cooling" type="button">Cooling</button>
+            </div>
+            <div class="product-grid" id="product-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p><strong>HomeGoods</strong> - Quality home essentials at practical prices.</p>
+        <p>Harare, Zimbabwe | +263 77 000 0000 | sales@homegoods.co.zw</p>
+        <p>&copy;<span id="currentYear"></span> |HomeGoods|Proud Bhebhe.</p>
+    </footer>
 </body>
 </html>

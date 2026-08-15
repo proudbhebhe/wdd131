@@ -1,133 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | HomeGoods</title>
-  <meta name="author" content="Proud Bhebhe">
-  <meta name="description" content="HomeGoods provides practical home appliances and flexible installment options for Zimbabwean households.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/site.css">
-  <script src="scripts/site.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | HomeGoods</title>
+    <meta name="author" content="Proud Bhebhe">
+    <meta name="description" content="HomeGoods provides practical home appliances and installment options for households in Zimbabwe.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" defer></script>
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="logo" href="index.html" aria-label="HomeGoods home">Home<span>Goods</span></a>
-    <button class="nav-toggle" type="button" aria-controls="nav-list" aria-expanded="false">Menu</button>
-    <nav aria-label="Primary navigation">
-      <ul class="nav-list" id="nav-list">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="products.html" >Products</a></li>
-        <li><a href="about.html" >About</a></li>
-        <li><a href="contact.html" >Contact <span class="cart-pill" id="cart-count">0</span></a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <header>
+        <div class="header-content">
+            <div class="logo">HomeGoods</div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<main id="main-content">
-  <section class="hero">
-    <div class="container hero-content">
-      <span class="eyebrow">Home essentials made easier</span>
-      <h1>Quality appliances for the home you are building.</h1>
-      <p>Find practical kitchen and cooling appliances, then enquire about flexible installment options designed for customers who want to improve their homes without paying everything at once.</p>
-      <div class="button-row">
-        <a class="btn btn-light" href="products.html">Shop appliances</a>
-        <a class="btn btn-outline" href="contact.html">Ask about installments</a>
-      </div>
-    </div>
-  </section>
-
-  <div id="site-notice" class="notice container" role="status" aria-live="polite"></div>
-
-  <section class="section" aria-labelledby="categories-title">
-    <div class="container">
-      <div class="section-heading">
-        <h2 id="categories-title">Shop by need</h2>
-        <p>Choose the type of appliance that matches what your household needs today.</p>
-      </div>
-      <div class="category-grid">
-        <article class="category-card card">
-          <div class="icon" aria-hidden="true">🍳</div>
-          <div><h3>Kitchen</h3><p>Cooking and food preparation appliances.</p></div>
-          <button class="btn" type="button" data-preference="Kitchen">Choose Kitchen</button>
-        </article>
-        <article class="category-card card">
-          <div class="icon" aria-hidden="true">❄️</div>
-          <div><h3>Cooling</h3><p>Refrigeration for food and household storage.</p></div>
-          <button class="btn" type="button" data-preference="Cooling">Choose Cooling</button>
-        </article>
-        <article class="category-card card">
-          <div class="icon" aria-hidden="true">🏠</div>
-          <div><h3>Packages</h3><p>Useful appliance combinations for a new home.</p></div>
-          <button class="btn" type="button" data-preference="Packages">Choose Packages</button>
-        </article>
-        <article class="category-card card">
-          <div class="icon" aria-hidden="true">💳</div>
-          <div><h3>Installments</h3><p>Ask us about payment options before you buy.</p></div>
-          <a class="btn" href="contact.html">Learn more</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section alt" aria-labelledby="featured-title">
-    <div class="container">
-      <div class="section-heading">
-        <h2 id="featured-title">Featured appliances</h2>
-        <p>A focused selection of practical products. Add products to your enquiry list before contacting us.</p>
-      </div>
-      <div class="product-grid" id="product-grid">
-        <!-- JavaScript renders product cards here. -->
-      </div>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="why-title">
-    <div class="container">
-      <div class="section-heading">
-        <h2 id="why-title">Why choose HomeGoods?</h2>
-        <p>We focus on making appliance shopping straightforward and useful for everyday households.</p>
-      </div>
-      <div class="value-grid">
-        <article class="card category-card"><div class="icon">✓</div><div><h3>Practical choices</h3><p>Products selected around common home needs.</p></div></article>
-        <article class="card category-card"><div class="icon">💰</div><div><h3>Flexible conversations</h3><p>Discuss installment options before committing.</p></div></article>
-        <article class="card category-card"><div class="icon">🤝</div><div><h3>Human service</h3><p>Contact us directly when you need help choosing.</p></div></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section alt" aria-labelledby="testimonials-title">
-    <div class="container">
-      <div class="section-heading">
-        <h2 id="testimonials-title">What customers value</h2>
-        <p>Short examples of the experience HomeGoods aims to provide.</p>
-      </div>
-      <div class="testimonial-grid">
-        <article class="quote-card card"><p>“I wanted an appliance without paying the whole amount immediately. The process was easy to understand.”</p><strong>— HomeGoods customer</strong></article>
-        <article class="quote-card card"><p>“The product information helped me compare what would actually work in my kitchen.”</p><strong>— HomeGoods customer</strong></article>
-        <article class="quote-card card"><p>“Being able to ask questions before buying made the decision much easier.”</p><strong>— HomeGoods customer</strong></article>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <section>
-        <h2>HomeGoods</h2>
-        <p>Practical home appliances with flexible installment options for Zimbabwean households.</p>
-      </section>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; <span class="current-year"></span> HomeGoods. Built for the Home Essentials project.</p>
-    </div>
-  </div>
-</footer>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Quality Home Essentials at Great Prices</h1>
+                <p>HomeGoods helps families find useful appliances for cooking, food storage and everyday home life.</p>
+                <a class="button button-light" href="products.html">View Products</a>
+                <a class="button" href="contact.html">Contact Us</a>
+            </div>
+        </section>
+        <section>
+            <div class="section-heading">
+                <h2>Shop by Category</h2>
+                <p>Choose an appliance category that matches your household needs.</p>
+            </div>
+            <div class="category-grid">
+                <article class="category-card">
+                    <h3>Kitchen</h3>
+                    <p>Blenders, stoves and other appliances for preparing meals.</p>
+                    <button class="button" onclick="savePreference('Kitchen')" type="button">Choose Kitchen</button>
+                </article>
+                <article class="category-card">
+                    <h3>Cooling</h3>
+                    <p>Refrigerators and appliances that help keep food fresh.</p>
+                    <button class="button" onclick="savePreference('Cooling')" type="button">Choose Cooling</button>
+                </article>
+                <article class="category-card">
+                    <h3>Installments</h3>
+                    <p>Ask us about available installment arrangements.</p><a class="button" href="contact.html">Ask Us</a>
+                </article>
+            </div>
+            <p id="preference-message"></p>
+        </section>
+        <section>
+            <div class="section-heading">
+                <h2>Why Choose HomeGoods?</h2>
+            </div>
+            <div class="info-grid">
+                <article class="info-card">
+                    <h3>Practical Products</h3>
+                    <p>We focus on appliances that solve everyday household needs.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Flexible Options</h3>
+                    <p>Customers can ask about installment options before purchasing.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Helpful Service</h3>
+                    <p>Contact us when you need help choosing an appliance.</p>
+                </article>
+            </div>
+        </section>
+        <section>
+            <div class="section-heading">
+                <h2>What Our Customers Say</h2>
+            </div>
+            <div class="testimonial-grid">
+                <article class="testimonial">
+                    <p>"The product information helped me decide which appliance would work best for my kitchen."</p><strong>- HomeGoods Customer</strong>
+                </article>
+                <article class="testimonial">
+                    <p>"I liked being able to ask questions before making my purchase."</p><strong>- HomeGoods Customer</strong>
+                </article>
+                <article class="testimonial">
+                    <p>"The installment information made it easier to plan my purchase."</p><strong>- HomeGoods Customer</strong>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><strong>HomeGoods</strong> - Quality home essentials at practical prices.</p>
+        <p>Harare, Zimbabwe | +263 77 000 0000 | sales@homegoods.co.zw</p>
+        <p>&copy;<span id="currentYear"></span>|HomeGoods|Proud Bhebhe.</p>
+    </footer>
 </body>
 </html>
