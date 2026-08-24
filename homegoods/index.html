@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeGoods | Affordable Boho Essentials</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">HomeGoods</a>
+            <button class="hamburger">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content reveal">
+            <h1>Curate Your Space. <br> Protect Your Budget.</h1>
+            <p>Earthy, bohemian home essentials curated specifically for civil servants. Turn a house into your sanctuary with flexible, zero-interest installment plans.</p>
+            <a href="shop.html" class="btn">Shop the Collection</a>
+        </div>
+    </section>
+
+    <!-- Animated Statistics Section -->
+    <section class="stats reveal">
+        <div class="grid">
+            <div class="stat-item reveal delay-1">
+                <h4 class="counter" data-target="1500">0</h4>
+                <p>Civil Servants Supported</p>
+            </div>
+            <div class="stat-item reveal delay-2">
+                <h4 class="counter" data-target="450">0</h4>
+                <p>Earthy Products Sourced</p>
+            </div>
+            <div class="stat-item reveal delay-3">
+                <h4 class="counter" data-target="100">0</h4>
+                <p>% Zero Interest Guarantee</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <h2 class="section-title reveal">Featured Finds</h2>
+        <div class="grid">
+            <div class="card reveal delay-1">
+                <img src="https://picsum.photos/400/300?random=1" alt="Macrame Wall Hanging" class="card-img">
+                <div class="card-body">
+                    <h3>Macrame Wall Art</h3>
+                    <p class="price">$15 / month</p>
+                    <a href="shop.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="card reveal delay-2">
+                <img src="https://picsum.photos/400/300?random=2" alt="Rattan Chair" class="card-img">
+                <div class="card-body">
+                    <h3>Handwoven Rattan Chair</h3>
+                    <p class="price">$25 / month</p>
+                    <a href="shop.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="card reveal delay-3">
+                <img src="https://picsum.photos/400/300?random=3" alt="Ceramic Dinner Set" class="card-img">
+                <div class="card-body">
+                    <h3>Earthy Ceramic Set</h3>
+                    <p class="price">$12 / month</p>
+                    <a href="shop.html" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Carousel -->
+    <section class="testimonials reveal">
+        <h2 class="section-title">Community Love</h2>
+        <div class="carousel-container">
+            <div class="carousel-item active">
+                <p>"HomeGoods made it so easy to furnish my apartment as a new teacher. The installment plans are a lifesaver, and my living room looks incredible!"</p>
+                <h4>- Sarah M., Educator</h4>
+            </div>
+            <div class="carousel-item">
+                <p>"I love the earthy tones and textures. Ordering was smooth, and the zero-interest plan meant I didn't have to wait to make my house a home."</p>
+                <h4>- David T., City Planner</h4>
+            </div>
+            <div class="carousel-controls">
+                <button onclick="prevSlide()">❮</button>
+                <button onclick="nextSlide()">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter reveal">
+        <h2>Join the Cozy Club</h2>
+        <p>Subscribe for exclusive drops, styling tips, and civil servant discounts.</p>
+        <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 HomeGoods. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

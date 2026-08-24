@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | HomeGoods</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">HomeGoods</a>
+            <button class="hamburger">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="reveal" style="margin-top: 80px;">
+        <h1 class="section-title">Get in Touch</h1>
+        
+        <div class="contact-layout">
+            <div class="contact-info reveal delay-1">
+                <h3>We'd love to hear from you</h3>
+                <p style="margin-bottom: 2rem;">Have questions about our installment plans, product sourcing, or delivery? Reach out to our team below.</p>
+                
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="text" placeholder="Government ID / Civil Servant Code (Optional)">
+                    <textarea placeholder="How can we help you?" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="map-container reveal delay-2">
+                <!-- Google Maps Embed  -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119565.65684784407!2d28.489114757303328!3d-20.1504285850931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eb55452d3aefab1%3A0x6b63d9178cc0875c!2sBulawayo%2C%20Zimbabwe!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div style="margin-top: 1rem;">
+                    <p><strong>Store Address:</strong> 123 Artisan Market Road, Bulawayo, Zimbabwe</p>
+                    <p><strong>Hours:</strong> Mon - Sat, 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 HomeGoods. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Go to top">↑</button>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
