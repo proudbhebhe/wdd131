@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Start a Project — Alphatron Web Services"
+    />
+    <link rel="icon" type="image/png" href="images/lighticon.svg" />
+    <title>Start a Project | Alphatron Web Services</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="logo" href="index.html" aria-label="Alphatron Web Services home">
+        <span class="logo-mark">
+            <img class="logo-dark" src="images/favicon.svg" alt="logo dark mode">
+            <img src="images/lighticon.svg" class="logo logo-light"
+            alt="alphatron logo">
+        </span>
+        <span>ALPHATRON<small>—WEB SERVICES—</small></span>
+      </a>
+        <ul class="links">
+          <li><a class="" href="index.html">Home</a></li>
+          <li><a class="" href="services.html">Services</a></li>
+          <li><a class="" href="process.html">Process</a></li>
+          <li><a class="" href="digital-care.html">Digital Care</a></li>
+          <li><a class="" href="about.html">About</a></li>
+          <li><a class="" href="faq.html">FAQ</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-tools">
+          <button
+            class="toggle"
+            id="theme-toggle"
+            aria-label="Toggle light and dark mode"
+          >
+            <span id="theme-icon">☾</span></button
+          ><a class="btn primary" href="contact.html">Start a Project →</a
+          ><button class="menu" id="menu" aria-label="Open navigation">
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="pagehero">
+      <div class="container">
+        <h1>Start a Project</h1>
+        <p>Tell us about your business and what you are trying to achieve.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <form class="form" id="project-form">
+          <div class="formgrid">
+            <label>Name *<input required placeholder="Your name" /></label
+            ><label
+              >Business Name *<input
+                required
+                placeholder="Business name" /></label
+            ><label
+              >Email *<input
+                required
+                type="email"
+                placeholder="you@example.com" /></label
+            ><label>Phone / WhatsApp<input placeholder="+263 ..." /></label
+            ><label
+              >Business Type<select>
+                <option>Small business</option>
+                <option>Entrepreneur</option>
+                <option>School</option>
+                <option>Organisation</option>
+                <option>Event</option>
+                <option>Other</option>
+              </select></label
+            ><label
+              >Service Required<select>
+                <option>Website Development</option>
+                <option>Website Redesign</option>
+                <option>E-Commerce</option>
+                <option>Landing Page</option>
+                <option>Domain & Hosting</option>
+                <option>Digital Care</option>
+                <option>Other</option>
+              </select></label
+            >
+          </div>
+          <label
+            >Main Business Goal<textarea
+              required
+              placeholder="What are you hoping this project will help your business achieve?"
+            ></textarea></label
+          ><label
+            >Tell us about the project<textarea
+              required
+              placeholder="Briefly describe what you need."
+            ></textarea>
+          </label>
+          <div class="notice">
+            <strong>Enquiry only:</strong> submitting this form does not create
+            a contract or authorize work. A formal proposal and agreement are
+            provided before project work begins.
+          </div>
+          <button class="btn primary" type="submit">
+            Submit Project Enquiry →
+          </button>
+          <p id="form-message" class="notice" hidden></p>
+        </form>
+      </div>
+    </section>
+    <section class="section alt">
+      <div class="container head">
+        <h2>Prefer a direct conversation?</h2>
+        <p>
+          Placeholder: replace this with your actual WhatsApp number, email
+          address and social links before launch.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footgrid">
+          <div class="footbrand">
+             <span class="logo-mark">
+            <img class="logo-dark" src="images/favicon.svg" alt="logo dark mode">
+            <img src="images/lighticon.svg" class="logo logo-light"
+            alt="alphatron logo">
+        </span>
+            <p>
+              Technology built around your business. Professional digital
+              solutions for businesses and organisations in Zimbabwe and beyond.
+            </p>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul class="footlinks">
+              <li><a href="about.html">About</a></li>
+              <li><a href="process.html">Process</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <ul class="footlinks">
+              <li><a href="services.html">Web Development</a></li>
+              <li><a href="services.html">E-Commerce</a></li>
+              <li><a href="services.html">Domain & Hosting</a></li>
+              <li><a href="digital-care.html">Digital Care</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p>+263 XX XXX XXXX</p>
+            <p>info@alphatron.co.zw</p>
+            <p>Zimbabwe</p>
+            <p style="margin-top: 8px">[Facebook] [Instagram] [LinkedIn]</p>
+          </div>
+        </div>
+        <div class="footbottom">
+          <span
+            >© <span id="year"></span> Alphatron Web Services. All rights
+            reserved.</span
+          ><span
+            ><a href="#">Privacy Policy</a> ·
+            <a href="#">Terms & Conditions</a></span
+          >
+        </div>
+      </div>
+    </footer>
+    <a class="floating" href="contact.html">◉ Let's Chat</a>
+    <script src="js/main.js"></script>
+  </body>
+</html>
