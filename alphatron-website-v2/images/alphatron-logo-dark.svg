@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Alphatron logo</title>
+  <desc id="desc">Stylized A surrounded by blue orbital arcs and connected circular nodes.</desc>
+  <defs>
+    
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1597F5"/>
+      <stop offset="55%" stop-color="#0878F2"/>
+      <stop offset="100%" stop-color="#1555E8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Upper orbital arc -->
+  <path d="M206 548 C150 438 163 305 245 202 C329 96 453 43 582 50 C702 56 809 111 875 204"
+        fill="none" stroke="url(#blueGradient)" stroke-width="34" stroke-linecap="butt"/>
+
+  <!-- Upper-right orbital continuation -->
+  <path d="M896 338 C900 383 897 428 886 472"
+        fill="none" stroke="url(#blueGradient)" stroke-width="34" stroke-linecap="butt"/>
+
+  <!-- Upper-right node -->
+  <circle cx="891" cy="285" r="45" fill="url(#blueGradient)"/>
+
+  <!-- Main A -->
+  <path d="M191 653 L474 154 L550 154 L833 653 L689 605 L512 292 L335 605 Z"
+        fill="#FFFFFF"/>
+
+  <!-- Inner triangle -->
+  <path d="M512 429 L621 632 Q512 621 403 632 Z"
+        fill="url(#blueGradient)"/>
+
+  <!-- Lower orbital arc -->
+  <path d="M125 762 C352 650 672 650 899 762"
+        fill="none" stroke="url(#blueGradient)" stroke-width="34" stroke-linecap="round"/>
+
+  <!-- Lower nodes -->
+  <circle cx="125" cy="762" r="45" fill="url(#blueGradient)"/>
+  <circle cx="899" cy="762" r="45" fill="url(#blueGradient)"/>
+</svg>

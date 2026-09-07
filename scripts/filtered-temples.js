@@ -94,7 +94,7 @@ const temples = [
 ];
 
 createTempleCard(temples);
-const homeLink = document.querySelector(".active")
+const homeLink = document.querySelector(".active");
 const oldLink = document.querySelector("#old");
 const newLink = document.querySelector("#new");
 const largeLink = document.querySelector("#large");
@@ -152,7 +152,7 @@ largeLink.addEventListener("click", (event) => {
     const large = temple.area;
     return large> 90000;
   }))
-})
+});
 
 smallLink.addEventListener("click", (event) =>{
   event.preventDefault();
@@ -160,4 +160,4 @@ smallLink.addEventListener("click", (event) =>{
     const small = temple.area;
     return small <10000;
   }))
-})
+});

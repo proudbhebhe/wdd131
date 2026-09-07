@@ -115,6 +115,7 @@ select {
 .ghost {
   background: var(--surface);
   border-color: var(--line);
+  color: var(--text);
 }
 .ghost:hover {
   border-color: var(--blue);
@@ -227,6 +228,7 @@ header {
   position: relative;
   overflow: hidden;
   padding: 75px 0 65px;
+  background-image: url('images/lighticon.svg');
   background:
     radial-gradient(
       circle at 84% 48%,
@@ -240,9 +242,7 @@ header {
   position: absolute;
   inset: 0;
   opacity: 0.22;
-  background-image:
-    linear-gradient(rgba(30, 150, 210, 0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(30, 150, 210, 0.18) 1px, transparent 1px);
+  background-image:url(images/lighticon.svg);
   background-size: 46px 46px;
   mask-image: linear-gradient(90deg, transparent, black 40%, transparent);
 }
@@ -299,16 +299,27 @@ header {
 }
 .stage {
   position: relative;
-  min-height: 440px;
+  top: 10px;
+  right: 0;
+  max-height: 340px;
   display: grid;
   place-items: center;
 }
+.stage img{
+  position: absolute;
+  width: 500px;
+  top: 0;
+  right: 0;
+}
 .device {
-  background: #0c1015;
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  position: relative;
   border-radius: 18px;
   padding: 8px;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+  opacity: 0.9;
+  
+}
+.device .logo-dark{
+  width: 500px;
 }
 .laptop {
   width: min(100%, 570px);
@@ -679,6 +690,18 @@ footer a {
   justify-content: space-between;
   color: #8492a4;
   font-size: 0.7rem;
+}
+.socialmedia {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+.socialmedia a img {
+    width: 30px;
+    padding: 20px 0;
+    height: auto;
+    display: block;
 }
 .floating {
   position: fixed;
