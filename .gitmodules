@@ -1,0 +1,3 @@
+[submodule "homegoods/homegoods"]
+	path = homegoods/homegoods
+	url = https://github.com/proudbhebhe/homegoods.git
