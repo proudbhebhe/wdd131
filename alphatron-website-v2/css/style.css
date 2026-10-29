@@ -206,6 +206,9 @@ header {
   background: var(--blue);
   box-shadow: 0 0 12px var(--blue);
 }
+ul.links.open li{
+  padding: 10px;
+}
 .nav-tools {
   display: flex;
   align-items: center;
@@ -592,6 +595,25 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 17px;
+}
+.form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.form-consent input[type="checkbox"] {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 0;
+  accent-color: var(--blue);
+}
+.form-consent a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 label {
   font-size: 0.83rem;

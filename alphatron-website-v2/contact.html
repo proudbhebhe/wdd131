@@ -103,10 +103,24 @@
             a contract or authorize work. A formal proposal and agreement are
             provided before project work begins.
           </div>
+          <label class="form-consent">
+            <input type="checkbox" name="policy-consent" required />
+            <span>
+              I have read and agree to the
+              <a href="privacy-policy.html">Privacy Policy</a> and
+              <a href="terms-of-use.html">Terms of Use</a>.
+            </span>
+          </label>
           <button class="btn primary" type="submit">
             Submit Project Enquiry →
           </button>
-          <p id="form-message" class="notice" hidden></p>
+          <p
+            id="form-message"
+            class="notice"
+            role="status"
+            aria-live="polite"
+            hidden
+          ></p>
         </form>
       </div>
     </section>
@@ -172,8 +186,8 @@
             >© <span id="year"></span> Alphatron Web Services. All rights
             reserved.</span
           ><span
-            ><a href="#">Privacy Policy</a> ·
-            <a href="#">Terms & Conditions</a></span
+            ><a href="privacy-policy.html">Privacy Policy</a> ·
+            <a href="terms-of-use.html">Terms of Use</a></span
           >
         </div>
       </div>

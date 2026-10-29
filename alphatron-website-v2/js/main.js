@@ -30,6 +30,9 @@ const y = document.querySelector("#year");
 if (y) y.textContent = new Date().getFullYear();
 document.querySelector("#project-form")?.addEventListener("submit", (e) => {
   e.preventDefault();
+  const form = e.currentTarget;
+  const consent = form.querySelector('[name="policy-consent"]');
+  if (!form.reportValidity() || !consent.checked) return;
   const m = document.querySelector("#form-message");
   m.hidden = false;
   m.textContent =
